@@ -1,5 +1,14 @@
+import { useRouter } from 'next/router';
+
 const Home = () => {
-  return <h1>Home</h1>
+  const router = useRouter()
+
+  return (
+    <>
+      <h1>Home</h1>
+      <button onClick={() => router.push('/product')}>Product LIST</button>
+    </>
+  );
 };
 
 export default Home;
